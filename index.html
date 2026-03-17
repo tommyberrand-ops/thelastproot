@@ -587,7 +587,7 @@
         <!-- HEADER -->
         <header>
             <h1><i class="fas fa-robot"></i> PROMPT DANCE STUDIO</h1>
-            <div class="version">v6.0 ULTIME - 57 personnages - Tous les effets - Visage 8K</div>
+            <div class="version">v6.0 ULTIME - 58 personnages - Tous les effets - Visage 8K</div>
         </header>
 
         <div class="main-content">
@@ -598,7 +598,7 @@
                     <div class="card-header">
                         <i class="fas fa-user-tag"></i>
                         <h3>PERSONNAGES</h3>
-                        <span class="badge">57</span>
+                        <span class="badge">58</span>
                     </div>
                     <div class="card-body">
                         <input type="text" id="characterSearch" placeholder="Rechercher..." class="search-input">
@@ -1305,7 +1305,7 @@
                     <div class="card-header">
                         <i class="fas fa-map"></i>
                         <h3>DÉCOR & MONDES SPECTACULAIRES</h3>
-                        <span class="badge" style="background: #00ffff; color: black;">NOUVEAU</span>
+                        <span class="badge" style="background: #00ffff; color: black;">23 MONDES</span>
                     </div>
                     <div class="card-body">
                         <div class="toggle-container">
@@ -1327,7 +1327,7 @@
                                 <small>Ton décor personnalisé REMPLACERA complètement le décor automatique du personnage !</small>
                             </div>
                             
-                            <!-- 🌍 MONDES SPECTACULAIRES - 20 univers différents -->
+                            <!-- 🌍 MONDES SPECTACULAIRES - 23 univers différents -->
                             <div style="margin-top: 20px;">
                                 <label style="font-size: 1.1em; color: #00ffff; display: block; margin-bottom: 10px; text-align: center;">
                                     🌌 CHOISIS TON MONDE SPECTACULAIRE 🌌
@@ -1434,10 +1434,25 @@
                                     <button type="button" class="btn small" style="background: #FF9900; border: 1px solid #FFCC66;" onclick="document.getElementById('customDecorText').value = 'dans un palais oriental, tapis volants, coussins de soie, fontaines, mosaïques colorées, lumières tamisées, ambiance mille et une nuits'">
                                         🕌 Palais Oriental
                                     </button>
-
+                                    
                                     <!-- JARDIN JAPONAIS -->
                                     <button type="button" class="btn small" style="background: #99CC99; border: 1px solid #CCFFCC;" onclick="document.getElementById('customDecorText').value = 'dans un jardin japonais traditionnel, cerisiers en fleurs, pont rouge, koi dans l\'étang, lanternes de pierre, brume légère au petit matin'">
                                         🎋 Jardin Japonais
+                                    </button>
+
+                                    <!-- ÉGYPTE / CLÉOPÂTRE -->
+                                    <button type="button" class="btn small" style="background: #D4AF37; border: 1px solid #FFD700;" onclick="document.getElementById('customDecorText').value = 'dans le palais royal de Cléopâtre à Alexandrie, colonnes égyptiennes géantes en or, hiéroglyphes lumineux sur les murs, vue sur le Nil au coucher du soleil, trône en or massif avec coussins pourpres, encens qui brûle, statues de dieux égyptiens, ambiance mystique et royale'">
+                                        👑 Palais de Cléopâtre
+                                    </button>
+                                    
+                                    <!-- TEMPLE ÉGYPTIEN -->
+                                    <button type="button" class="btn small" style="background: #CD7F32; border: 1px solid #DAA520;" onclick="document.getElementById('customDecorText').value = 'dans un temple égyptien antique, colonnes massives, hiéroglyphes gravés dans la pierre, torches aux murs, statues de dieux (Anubis, Horus), rayons de soleil traversant les ouvertures, ambiance mystérieuse et sacrée'">
+                                        🏛️ Temple Égyptien
+                                    </button>
+                                    
+                                    <!-- BORDS DU NIL -->
+                                    <button type="button" class="btn small" style="background: #228B22; border: 1px solid #32CD32;" onclick="document.getElementById('customDecorText').value = 'sur les rives du Nil au coucher du soleil, palmiers, papyrus, felouques traditionnelles sur l\'eau, ciel orange et rose, pyramides au loin, ambiance paisible et romantique'">
+                                        🌅 Bords du Nil
                                     </button>
                                 </div>
                             </div>
@@ -1445,24 +1460,8 @@
                             <div style="margin-top: 15px; text-align: center;">
                                 <small style="color: #00ffff;">✨ Clique sur un monde pour remplir le décor automatiquement ✨</small>
                             </div>
-     
-    <!-- ÉGYPTE / CLÉOPÂTRE -->
-    <button type="button" class="btn small" style="background: #D4AF37; border: 1px solid #FFD700;" onclick="document.getElementById('customDecorText').value = 'dans le palais royal de Cléopâtre à Alexandrie, colonnes égyptiennes géantes en or, hiéroglyphes lumineux sur les murs, vue sur le Nil au coucher du soleil, trône en or massif avec coussins pourpres, encens qui brûle, statues de dieux égyptiens, ambiance mystique et royale'">
-        👑 Palais de Cléopâtre
-    </button>
-    
-    <!-- TEMPLE ÉGYPTIEN -->
-    <button type="button" class="btn small" style="background: #CD7F32; border: 1px solid #DAA520;" onclick="document.getElementById('customDecorText').value = 'dans un temple égyptien antique, colonnes massives, hiéroglyphes gravés dans la pierre, torches aux murs, statues de dieux (Anubis, Horus), rayons de soleil traversant les ouvertures, ambiance mystérieuse et sacrée'">
-        🏛️ Temple Égyptien
-    </button>
-    
-    <!-- BORDS DU NIL -->
-    <button type="button" class="btn small" style="background: #228B22; border: 1px solid #32CD32;" onclick="document.getElementById('customDecorText').value = 'sur les rives du Nil au coucher du soleil, palmiers, papyrus, felouques traditionnelles sur l\'eau, ciel orange et rose, pyramides au loin, ambiance paisible et romantique'">
-        🌅 Bords du Nil
-    </button>
-    
-</div>  <!-- ← C'EST ICI QUE LA DIV SE FERME -->
-
+                        </div>
+                        
                         <div class="info-note" style="margin-top: 15px; background: rgba(255,255,255,0.1);">
                             <i class="fas fa-info-circle"></i> 
                             <strong>Mode automatique :</strong> Si non activé, le décor sera choisi automatiquement selon ton personnage.
@@ -1620,7 +1619,7 @@
         </div>
 
         <footer>
-            <p>© 2024 - PROMPT DANCE STUDIO v6.0 ULTIME - 57 personnages - Tous les effets - Visage 8K - 20 mondes spectaculaires</p>
+            <p>© 2024 - PROMPT DANCE STUDIO v6.0 ULTIME - 58 personnages - Tous les effets - Visage 8K - 23 mondes spectaculaires</p>
         </footer>
     </div>
 
