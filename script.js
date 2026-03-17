@@ -5,6 +5,7 @@
 // CORRIGÉ : Priorité absolue aux options spéciales avec renfort vidéo
 // CORRIGÉ : Intégration du MODE ANIMAL (chatte, tigresse, panthère, lionne, lapine)
 // CORRIGÉ : Mains peintes visibles pendant TOUTE la PARTIE 1 (couleurs ne disparaissent pas)
+// CORRIGÉ : Gestion des 5 tenues pour le rappeur urbain ET le rappeur américain
 
 console.log("🚀 Chargement de script.js...");
 
@@ -201,25 +202,25 @@ class PromptGenerator {
         return `\n\n🎤 SCRIPT DU PERSONNAGE :\n${scripts}`;
     }
 
-// ===== TEXTES MAGIQUES FLOTTANTS =====
-generateFloatingWords(partie) {
-    if (!document.getElementById('enableMagicTexts')?.checked) return '';
-    
-    const words = [];
-    
-    // Textes standards
-    if (document.getElementById('textFollow')?.checked) words.push('"Follow Me"');
-    if (document.getElementById('textLike')?.checked) words.push('"Like Me"');
-    if (document.getElementById('textLuna')?.checked) words.push('"@luna_wells"');
-    if (document.getElementById('textSubscribe')?.checked) words.push('"Subscribe"');
-    if (document.getElementById('textLove')?.checked) words.push('"Love Me"');
-    if (document.getElementById('textWatch')?.checked) words.push('"Watch Me"');
-    if (document.getElementById('textHeart')?.checked) words.push('❤️ (cœurs)');
-    if (document.getElementById('textStar')?.checked) words.push('✨ (étoiles)');
-    
-    // Texte personnalisé
-    const customText = document.getElementById('customText')?.value;
-    if (customText) words.push(`"${customText}"`);
+    // ===== TEXTES MAGIQUES FLOTTANTS =====
+    generateFloatingWords(partie) {
+        if (!document.getElementById('enableMagicTexts')?.checked) return '';
+        
+        const words = [];
+        
+        // Textes standards
+        if (document.getElementById('textFollow')?.checked) words.push('"Follow Me"');
+        if (document.getElementById('textLike')?.checked) words.push('"Like Me"');
+        if (document.getElementById('textLuna')?.checked) words.push('"@luna_wells"');
+        if (document.getElementById('textSubscribe')?.checked) words.push('"Subscribe"');
+        if (document.getElementById('textLove')?.checked) words.push('"Love Me"');
+        if (document.getElementById('textWatch')?.checked) words.push('"Watch Me"');
+        if (document.getElementById('textHeart')?.checked) words.push('❤️ (cœurs)');
+        if (document.getElementById('textStar')?.checked) words.push('✨ (étoiles)');
+        
+        // Texte personnalisé
+        const customText = document.getElementById('customText')?.value;
+        if (customText) words.push(`"${customText}"`);
         
         if (words.length === 0) return '';
         
@@ -568,7 +569,10 @@ generateFloatingWords(partie) {
                 maintien: document.getElementById('finalMaintien')?.value || '2',
                 emotion: document.getElementById('finalEmotion')?.value || 'satisfaite',
                 interaction: document.getElementById('finalInteraction')?.value || 'regard'
-            }
+            },
+            // 👇 AJOUT POUR LES 5 TENUES DES RAPPEURS
+            rapperStyle: document.getElementById('rapperStyle')?.value || 'tenue1',
+            rapperluxeStyle: document.getElementById('rapperluxeStyle')?.value || 'tenue1'
         };
     }
 
@@ -839,6 +843,26 @@ ${hasPriorityEyes ?
   '- Iris hyper détaillés avec motifs complexes (comme une photo macro)\n- Vaisseaux sanguins très fins visibles dans le blanc de l œil\n- Reflets multiples dans les yeux (catchlights) nets et naturels\n- Pupilles qui réagissent à la lumière\n- Netteté maximale sur les yeux (point focal de l image)'}`;
         }
 
+        // 👇 GESTION DE LA TENUE POUR LE RAPPEUR URBAIN (5 STYLES)
+        let outfitText = this.userData.finalOutfit;
+        
+        if (this.userData.country === 'rapper' && countries.rapper.tenues) {
+            const style = this.userData.rapperStyle;
+            const tenue = countries.rapper.tenues[style];
+            if (tenue) {
+                outfitText = `${tenue.description} aux couleurs ${tenue.colors.join(' et ')}. Éléments : ${tenue.elements.join(', ')}. Accessoires : ${tenue.accessories.join(', ')}.`;
+            }
+        }
+        
+        // 👇 GESTION DE LA TENUE POUR LE RAPPEUR AMÉRICAIN LUXE (5 STYLES)
+        if (this.userData.country === 'rapperluxe' && countries.rapperluxe.tenues) {
+            const style = this.userData.rapperluxeStyle;
+            const tenue = countries.rapperluxe.tenues[style];
+            if (tenue) {
+                outfitText = `${tenue.description} aux couleurs ${tenue.colors.join(' et ')}. Éléments : ${tenue.elements.join(', ')}. Accessoires : ${tenue.accessories.join(', ')}.`;
+            }
+        }
+
         return `Suite de la transition - DEUXIÈME PARTIE de 6 secondes.
 
 CONTINUITÉ PARFAITE DU VISAGE - ABSOLUMENT CRUCIAL :
@@ -886,7 +910,7 @@ ${this.userData.gestures.viens ? '- Elle fait le geste "VIENS VERS MOI" avec son
 
 NOUVELLE TENUE (TOTALEMENT REMPLACÉE - DÉJÀ PORTÉE) :
 Elle porte maintenant une tenue spectaculaire (déjà enfilée pendant la transition) :
-${this.userData.finalOutfit}
+${outfitText}
 
 CHEVEUX TRANSFORMÉS - COULEURS FLUO (DÉJÀ COLORÉS) :
 ${this.userData.enableFluo ? 
@@ -1536,4 +1560,4 @@ window.initCharacters = initCharacters;
 window.displayPrompt = displayPrompt;
 window.updateRecap = updateRecap;
 
-console.log("📦 script.js chargé avec TOUS les effets - MODE ANIMAL INTÉGRÉ - MAINS PEINTES CORRIGÉES");
+console.log("📦 script.js chargé avec TOUS les effets - MODE ANIMAL INTÉGRÉ - MAINS PEINTES CORRIGÉES - 5 TENUES POUR LES 2 RAPPEURS");
