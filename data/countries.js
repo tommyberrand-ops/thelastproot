@@ -1,5 +1,5 @@
 // data/countries.js
-// VERSION CORRIGÉE - 55 PERSONNAGES AVEC TOUTES LES VIRGULES
+// VERSION FINALE - 60 PERSONNAGES (2 rappeurs)
 
 const countries = {
     // ==================== PAYS TERRESTRES (11) ====================
@@ -1217,418 +1217,614 @@ const countries = {
         }
     },
 
-
-equilibriste: {
-    type: "equilibriste",
-    name: "🎪 Équilibriste",
-    dance: "Danse d'équilibre",
-    palmColors: { left: "#ff4500", right: "#ffd700" },
-    finalOutfit: {
-        description: "tenue d'équilibriste chic et sensuelle",
-        colors: ["rouge velours", "noir", "argent"],
-        elements: ["justaucorps pailleté", "bas résille", "chaussons de danse", "cape légère"],
-        accessories: ["bandeau dans les cheveux", "bracelets scintillants", "poudre dorée sur la peau"]
+    equilibriste: {
+        type: "equilibriste",
+        name: "🎪 Équilibriste",
+        dance: "Danse d'équilibre",
+        palmColors: { left: "#ff4500", right: "#ffd700" },
+        finalOutfit: {
+            description: "tenue d'équilibriste chic et sensuelle",
+            colors: ["rouge velours", "noir", "argent"],
+            elements: ["justaucorps pailleté", "bas résille", "chaussons de danse", "cape légère"],
+            accessories: ["bandeau dans les cheveux", "bracelets scintillants", "poudre dorée sur la peau"]
+        },
+        hairFluo: ["rouge", "or", "argent"],
+        background: "chapiteau de cirque intimiste, spot unique, public silencieux dans l'ombre",
+        danceMoves: {
+            part1: [
+                "pas lents et mesurés, chaque mouvement calculé pour préserver l'équilibre",
+                "bras gracieux en balancier",
+                "rotations du bassin tout en gardant la tête immobile"
+            ],
+            part2: [
+                "mouvements plus fluides et audacieux",
+                "déhanchés sensuels sans perturber l'objet",
+                "tours gracieux avec l'objet qui tourne avec elle"
+            ]
+        }
     },
-    hairFluo: ["rouge", "or", "argent"],
-    background: "chapiteau de cirque intimiste, spot unique, public silencieux dans l'ombre",
-    danceMoves: {
-        part1: [
-            "pas lents et mesurés, chaque mouvement calculé pour préserver l'équilibre",
-            "bras gracieux en balancier",
-            "rotations du bassin tout en gardant la tête immobile"
-        ],
-        part2: [
-            "mouvements plus fluides et audacieux",
-            "déhanchés sensuels sans perturber l'objet",
-            "tours gracieux avec l'objet qui tourne avec elle"
-        ]
-    }
-},
 
-
-butterfly_fairy: {
-    type: "fairy",
-    name: "🦋 Fée des Papillons",
-    dance: "Danse des Ailes",
-    palmColors: { left: "#ff69b4", right: "#87ceeb" },
-    finalOutfit: {
-        description: "tenue de fée papillon",
-        colors: ["rose", "bleu ciel", "violet"],
-        elements: ["robe en pétales", "ailes de papillon géantes", "voiles irisés", "corset fleuri"],
-        accessories: ["antennes lumineuses", "poudre magique", "fleurs volantes", "bijoux en cristal"]
+    butterfly_fairy: {
+        type: "fairy",
+        name: "🦋 Fée des Papillons",
+        dance: "Danse des Ailes",
+        palmColors: { left: "#ff69b4", right: "#87ceeb" },
+        finalOutfit: {
+            description: "tenue de fée papillon",
+            colors: ["rose", "bleu ciel", "violet"],
+            elements: ["robe en pétales", "ailes de papillon géantes", "voiles irisés", "corset fleuri"],
+            accessories: ["antennes lumineuses", "poudre magique", "fleurs volantes", "bijoux en cristal"]
+        },
+        hairFluo: ["rose", "bleu", "violet"],
+        background: "jardin enchanté, fleurs géantes, papillons multicolores, cascade magique",
+        danceMoves: {
+            part1: ["battements d'ailes", "vols planés", "poses sur les fleurs"],
+            part2: ["danse des papillons", "métamorphose colorée", "envol final"]
+        }
     },
-    hairFluo: ["rose", "bleu", "violet"],
-    background: "jardin enchanté, fleurs géantes, papillons multicolores, cascade magique",
-    danceMoves: {
-        part1: ["battements d'ailes", "vols planés", "poses sur les fleurs"],
-        part2: ["danse des papillons", "métamorphose colorée", "envol final"]
-    }
-},
 
-
-
-  cabaret: {
-    type: "default",
-    name: "🎤 Chanteuse de Cabaret",
-    dance: "Danse de Cabaret",
-    palmColors: { left: "#ff69b4", right: "#000000" },
-    finalOutfit: {
-        description: "tenue de cabaret glamour",
-        colors: ["rose", "noir", "argent"],
-        elements: ["robe longue à franges", "bas résille", "gants longs", "chaussures à talons"],
-        accessories: ["microphone", "chapeau claque", "boa en plumes", "gants en dentelle"]
+    cabaret: {
+        type: "default",
+        name: "🎤 Chanteuse de Cabaret",
+        dance: "Danse de Cabaret",
+        palmColors: { left: "#ff69b4", right: "#000000" },
+        finalOutfit: {
+            description: "tenue de cabaret glamour",
+            colors: ["rose", "noir", "argent"],
+            elements: ["robe longue à franges", "bas résille", "gants longs", "chaussures à talons"],
+            accessories: ["microphone", "chapeau claque", "boa en plumes", "gants en dentelle"]
+        },
+        hairFluo: ["rose", "argent", "noir"],
+        background: "scène de cabaret parisien, projecteurs, rideaux rouges, piano",
+        danceMoves: {
+            part1: ["poses de chanteuse", "jeux avec le micro", "regards langoureux"],
+            part2: ["danse endiablée", "lancer de chapeau", "final en apothéose"]
+        }
     },
-    hairFluo: ["rose", "argent", "noir"],
-    background: "scène de cabaret parisien, projecteurs, rideaux rouges, piano",
-    danceMoves: {
-        part1: ["poses de chanteuse", "jeux avec le micro", "regards langoureux"],
-        part2: ["danse endiablée", "lancer de chapeau", "final en apothéose"]
-    }
-},
 
-
-
-  supervillain: {
-    type: "default",
-    name: "🦹‍♀️ Super-Vilaine",
-    dance: "Danse du Mal",
-    palmColors: { left: "#8b0000", right: "#000000" },
-    finalOutfit: {
-        description: "tenue de super-vilaine chic",
-        colors: ["rouge sang", "noir", "violet"],
-        elements: ["combinaison en cuir moulante", "cape de velours noir", "bottes à talons aiguilles", "gants longs"],
-        accessories: ["masque de méchante", "sceptre maléfique", "fouet décoratif", "trône sombre"]
+    supervillain: {
+        type: "default",
+        name: "🦹‍♀️ Super-Vilaine",
+        dance: "Danse du Mal",
+        palmColors: { left: "#8b0000", right: "#000000" },
+        finalOutfit: {
+            description: "tenue de super-vilaine chic",
+            colors: ["rouge sang", "noir", "violet"],
+            elements: ["combinaison en cuir moulante", "cape de velours noir", "bottes à talons aiguilles", "gants longs"],
+            accessories: ["masque de méchante", "sceptre maléfique", "fouet décoratif", "trône sombre"]
+        },
+        hairFluo: ["noir", "rouge", "violet"],
+        background: "repaire secret, éclairs, flammes, ville en contrebas",
+        danceMoves: {
+            part1: ["démarche arrogante", "poses dominatrices", "regards cruels"],
+            part2: ["danse de la tentation", "jeux avec le fouet", "rire diabolique final"]
+        }
     },
-    hairFluo: ["noir", "rouge", "violet"],
-    background: "repaire secret, éclairs, flammes, ville en contrebas",
-    danceMoves: {
-        part1: ["démarche arrogante", "poses dominatrices", "regards cruels"],
-        part2: ["danse de la tentation", "jeux avec le fouet", "rire diabolique final"]
-    }
-},
 
+    geisha_tradi: {
+        type: "geisha",
+        name: "🎎 Geisha Traditionnelle",
+        dance: "Danse Cérémoniale",
+        palmColors: { left: "#ffffff", right: "#ff69b4" },
+        finalOutfit: {
+            description: "kimono traditionnel de geisha",
+            colors: ["rouge", "blanc", "or"],
+            elements: ["kimono en soie", "obi large", "manches longues", "chaussures traditionnelles"],
+            accessories: ["épingles à cheveux en fleurs", "éventail pliant", "ombrelle", "maquillage blanc"]
+        },
+        hairFluo: ["noir", "rouge", "or"],
+        background: "maison de thé japonaise, jardin zen, lanternes",
+        danceMoves: {
+            part1: ["gestes lents et précis", "pas glissés", "jeux d'éventail subtils"],
+            part2: ["danse cérémoniale accélérée", "dévoilement de la nuque", "poses gracieuses"]
+        }
+    }, 
 
-  geisha_tradi: {
-    type: "geisha",
-    name: "🎎 Geisha Traditionnelle",
-    dance: "Danse Cérémoniale",
-    palmColors: { left: "#ffffff", right: "#ff69b4" },
-    finalOutfit: {
-        description: "kimono traditionnel de geisha",
-        colors: ["rouge", "blanc", "or"],
-        elements: ["kimono en soie", "obi large", "manches longues", "chaussures traditionnelles"],
-        accessories: ["épingles à cheveux en fleurs", "éventail pliant", "ombrelle", "maquillage blanc"]
+    djinn: {
+        type: "default",
+        name: "🧞 Djinn",
+        dance: "Danse du Génie",
+        palmColors: { left: "#ffd700", right: "#4b0082" },
+        finalOutfit: {
+            description: "tenue de génie mystique",
+            colors: ["or", "violet", "turquoise"],
+            elements: ["pantalon bouffant", "haut brodé", "voiles transparents", "bijoux en or"],
+            accessories: ["lampe magique", "fumée parfumée", "bracelets qui tintent", "poudre d'étoiles"]
+        },
+        hairFluo: ["or", "violet", "turquoise"],
+        background: "palais des mille et une nuits, tapis volant, ciel étoilé",
+        danceMoves: {
+            part1: ["mouvements mystiques", "ondulations de génie", "gestes d'invocation"],
+            part2: ["danse d'exaucement", "apparition de fumée magique", "jeux avec la lampe"]
+        }
     },
-    hairFluo: ["noir", "rouge", "or"],
-    background: "maison de thé japonaise, jardin zen, lanternes",
-    danceMoves: {
-        part1: ["gestes lents et précis", "pas glissés", "jeux d'éventail subtils"],
-        part2: ["danse cérémoniale accélérée", "dévoilement de la nuque", "poses gracieuses"]
-    }
-}, 
 
-
-
-  djinn: {
-    type: "default",
-    name: "🧞 Djinn",
-    dance: "Danse du Génie",
-    palmColors: { left: "#ffd700", right: "#4b0082" },
-    finalOutfit: {
-        description: "tenue de génie mystique",
-        colors: ["or", "violet", "turquoise"],
-        elements: ["pantalon bouffant", "haut brodé", "voiles transparents", "bijoux en or"],
-        accessories: ["lampe magique", "fumée parfumée", "bracelets qui tintent", "poudre d'étoiles"]
+    clown: {
+        type: "default",
+        name: "🤡 Clowne",
+        dance: "Danse Burlesque",
+        palmColors: { left: "#ff0000", right: "#0000ff" },
+        finalOutfit: {
+            description: "tenue de clown chic et sensuelle",
+            colors: ["rouge", "bleu", "jaune"],
+            elements: ["justaucorps à pois", "froufrous", "col clowne", "bretelles"],
+            accessories: ["nez rouge (optionnel)", "chapeau pointu", "gants blancs", "fleurs qui arrosent"]
+        },
+        hairFluo: ["rouge", "bleu", "vert"],
+        background: "chapiteau de cirque coloré, projecteurs, public hilare",
+        danceMoves: {
+            part1: ["mouvements exagérés", "clins d'œil comiques", "poses burlesques"],
+            part2: ["cascade de blagues visuelles", "jeux avec des accessoires", "final explosif"]
+        }
     },
-    hairFluo: ["or", "violet", "turquoise"],
-    background: "palais des mille et une nuits, tapis volant, ciel étoilé",
-    danceMoves: {
-        part1: ["mouvements mystiques", "ondulations de génie", "gestes d'invocation"],
-        part2: ["danse d'exaucement", "apparition de fumée magique", "jeux avec la lampe"]
-    }
-},
 
-
-
-  clown: {
-    type: "default",
-    name: "🤡 Clowne",
-    dance: "Danse Burlesque",
-    palmColors: { left: "#ff0000", right: "#0000ff" },
-    finalOutfit: {
-        description: "tenue de clown chic et sensuelle",
-        colors: ["rouge", "bleu", "jaune"],
-        elements: ["justaucorps à pois", "froufrous", "col clowne", "bretelles"],
-        accessories: ["nez rouge (optionnel)", "chapeau pointu", "gants blancs", "fleurs qui arrosent"]
+    chinese_tradi: {
+        type: "default",
+        name: "🏮 Danseuse Chinoise",
+        dance: "Danse Traditionnelle",
+        palmColors: { left: "#ff0000", right: "#ffd700" },
+        finalOutfit: {
+            description: "tenue traditionnelle chinoise",
+            colors: ["rouge", "or", "vert"],
+            elements: ["qipao moderne", "manches longues", "broderies de dragons", "ceinture en soie"],
+            accessories: ["éventail rond", "épingles à cheveux", "ombrelle en papier", "bijoux en jade"]
+        },
+        hairFluo: ["noir", "rouge", "or"],
+        background: "jardin chinois, pont rouge, lanternes, cerisiers en fleurs",
+        danceMoves: {
+            part1: ["gestes gracieux", "pas glissés", "jeux d'éventail"],
+            part2: ["danse des dragons", "tours rapides", "final en apothéose"]
+        }
     },
-    hairFluo: ["rouge", "bleu", "vert"],
-    background: "chapiteau de cirque coloré, projecteurs, public hilare",
-    danceMoves: {
-        part1: ["mouvements exagérés", "clins d'œil comiques", "poses burlesques"],
-        part2: ["cascade de blagues visuelles", "jeux avec des accessoires", "final explosif"]
-    }
-},
 
-
-
-chinese_tradi: {
-    type: "default",
-    name: "🏮 Danseuse Chinoise",
-    dance: "Danse Traditionnelle",
-    palmColors: { left: "#ff0000", right: "#ffd700" },
-    finalOutfit: {
-        description: "tenue traditionnelle chinoise",
-        colors: ["rouge", "or", "vert"],
-        elements: ["qipao moderne", "manches longues", "broderies de dragons", "ceinture en soie"],
-        accessories: ["éventail rond", "épingles à cheveux", "ombrelle en papier", "bijoux en jade"]
+    // ==================== SORCIÈRE HALLOWEEN ====================
+    halloween_witch: {
+        type: "witch",
+        name: "🎃 Sorcière Halloween",
+        dance: "Danse Ensorcelante",
+        palmColors: { left: "#ff6b00", right: "#800080" },
+        finalOutfit: {
+            description: "tenue de sorcière festive et sexy pour Halloween",
+            colors: ["orange citrouille", "violet mystique", "noir profond"],
+            elements: [
+                "robe courte en tulle noir avec motifs citrouilles", 
+                "corset en velours orange",
+                "bas résille violet",
+                "bottines à talons avec petites citrouilles",
+                "chapeau pointu de sorcière revisité",
+                "cape courte en satin noir"
+            ],
+            accessories: [
+                "balai magique décoratif",
+                "citrouille lumineuse (lanterne)",
+                "boucles d'oreilles en forme de chauve-souris",
+                "collier avec pendentif citrouille",
+                "baguette magique à étoile",
+                "maquillage noir et orange",
+                "faux ongles orange et noir"
+            ]
+        },
+        hairFluo: ["orange fluo", "violet fluo", "noir", "vert fluo"],
+        background: "forêt hantée la nuit, citrouilles lumineuses, pleine lune, château hanté au loin, brume mystérieuse, toiles d'araignée",
+        danceMoves: {
+            part1: [
+                "mouvements mystérieux et envoûtants",
+                "jeux avec la cape qui flotte",
+                "regards perçants vers la caméra",
+                "caresses sur le balai magique",
+                "poses de sorcière moderne"
+            ],
+            part2: [
+                "danse ensorcelante accélérée",
+                "tours gracieux avec le chapeau",
+                "jeux avec la citrouille lumineuse",
+                "cambrures mystiques",
+                "final avec explosion de confettis orange et noir"
+            ]
+        }
     },
-    hairFluo: ["noir", "rouge", "or"],
-    background: "jardin chinois, pont rouge, lanternes, cerisiers en fleurs",
-    danceMoves: {
-        part1: ["gestes gracieux", "pas glissés", "jeux d'éventail"],
-        part2: ["danse des dragons", "tours rapides", "final en apothéose"]
-    }
-},
 
-// ==================== SORCIÈRE HALLOWEEN ====================
-halloween_witch: {
-    type: "witch",
-    name: "🎃 Sorcière Halloween",
-    dance: "Danse Ensorcelante",
-    palmColors: { left: "#ff6b00", right: "#800080" },
-    finalOutfit: {
-        description: "tenue de sorcière festive et sexy pour Halloween",
-        colors: ["orange citrouille", "violet mystique", "noir profond"],
-        elements: [
-            "robe courte en tulle noir avec motifs citrouilles", 
-            "corset en velours orange",
-            "bas résille violet",
-            "bottines à talons avec petites citrouilles",
-            "chapeau pointu de sorcière revisité",
-            "cape courte en satin noir"
-        ],
-        accessories: [
-            "balai magique décoratif",
-            "citrouille lumineuse (lanterne)",
-            "boucles d'oreilles en forme de chauve-souris",
-            "collier avec pendentif citrouille",
-            "baguette magique à étoile",
-            "maquillage noir et orange",
-            "faux ongles orange et noir"
-        ]
+    // ==================== SANTA MUERTE ====================
+    santa_muerte: {
+        type: "default",
+        name: "💀 Santa Muerte",
+        dance: "Danse Sacrée",
+        palmColors: { left: "#c0c0c0", right: "#000000" },
+        finalOutfit: {
+            description: "tenue de Santa Muerte, sainte de la mort",
+            colors: ["argent métallique", "noir profond", "blanc spectral"],
+            elements: [
+                "robe longue fluide blanche ou noire",
+                "corset argenté orné de motifs de crânes",
+                "voile de dentelle noire sur le visage",
+                "cape longue en velours noir",
+                "gants longs en dentelle argentée",
+                "ceinture ornée de roses noires"
+            ],
+            accessories: [
+                "masque ou maquillage de crâne (calavera)",
+                "couronne de fleurs (œillets blancs et rouges)",
+                "globe terrestre (accessoire symbolique)",
+                "faux squelettes miniatures",
+                "roses noires et blanches",
+                "encens qui fume",
+                "bougies votives",
+                "bijoux en argent (crânes, os)"
+            ]
+        },
+        hairFluo: ["argent", "blanc", "noir", "violet sombre"],
+        background: "autel mexicain la nuit, bougies allumées, fleurs de cempasúchil (souci), crânes en sucre, ambiance mystique et sacrée, lueurs chaudes des bougies",
+        danceMoves: {
+            part1: [
+                "mouvements lents et solennels",
+                "bras levés en prière",
+                "gestes de bénédiction",
+                "marche majestueuse",
+                "regards mystérieux derrière le voile"
+            ],
+            part2: [
+                "danse rituelle accélérée",
+                "tours gracieux avec la cape",
+                "jeux avec les roses",
+                "cambrures de sainte",
+                "final en pose de bénédiction, bras écartés"
+            ]
+        }
     },
-    hairFluo: ["orange fluo", "violet fluo", "noir", "vert fluo"],
-    background: "forêt hantée la nuit, citrouilles lumineuses, pleine lune, château hanté au loin, brume mystérieuse, toiles d'araignée",
-    danceMoves: {
-        part1: [
-            "mouvements mystérieux et envoûtants",
-            "jeux avec la cape qui flotte",
-            "regards perçants vers la caméra",
-            "caresses sur le balai magique",
-            "poses de sorcière moderne"
-        ],
-        part2: [
-            "danse ensorcelante accélérée",
-            "tours gracieux avec le chapeau",
-            "jeux avec la citrouille lumineuse",
-            "cambrures mystiques",
-            "final avec explosion de confettis orange et noir"
-        ]
-    }
-},
 
-// ==================== SANTA MUERTE ====================
-santa_muerte: {
-    type: "default",
-    name: "💀 Santa Muerte",
-    dance: "Danse Sacrée",
-    palmColors: { left: "#c0c0c0", right: "#000000" },
-    finalOutfit: {
-        description: "tenue de Santa Muerte, sainte de la mort",
-        colors: ["argent métallique", "noir profond", "blanc spectral"],
-        elements: [
-            "robe longue fluide blanche ou noire",
-            "corset argenté orné de motifs de crânes",
-            "voile de dentelle noire sur le visage",
-            "cape longue en velours noir",
-            "gants longs en dentelle argentée",
-            "ceinture ornée de roses noires"
-        ],
-        accessories: [
-            "masque ou maquillage de crâne (calavera)",
-            "couronne de fleurs (œillets blancs et rouges)",
-            "globe terrestre (accessoire symbolique)",
-            "faux squelettes miniatures",
-            "roses noires et blanches",
-            "encens qui fume",
-            "bougies votives",
-            "bijoux en argent (crânes, os)"
-        ]
+    // ==================== COURTISANE ====================
+    courtisane: {
+        type: "default",
+        name: "👑 Courtisane",
+        dance: "Danse de Séduction",
+        palmColors: { left: "#8b4513", right: "#d4af37" },
+        finalOutfit: {
+            description: "tenue de courtisane luxueuse et sensuelle",
+            colors: ["velours pourpre", "or", "ivoire"],
+            elements: [
+                "robe longue en velours pourpre profond",
+                "corset en soie ivoire avec lacets dorés",
+                "jupons en dentelle fine",
+                "manches longues transparentes",
+                "décolleté vertigineux",
+                "fente latérale jusqu'à mi-cuisse"
+            ],
+            accessories: [
+                "éventail en dentelle dorée",
+                "collier de perles fines",
+                "pendentif en or avec rubis",
+                "gants longs en résille",
+                "broche antique dans les cheveux",
+                "parfum de luxe (accessoire invisible)",
+                "chaussures à talons en satin"
+            ]
+        },
+        hairFluo: ["brun", "auburn", "noir", "blond vénitien"],
+        background: "boudoir luxueux du 18ème siècle, tentures de velours, bougies parfumées, miroirs dorés, mobilier ancien, ambiance intime et raffinée",
+        danceMoves: {
+            part1: [
+                "démarche féline et langoureuse",
+                "jeux avec l'éventail (ouvertures lentes)",
+                "regards par-dessus l'épaule",
+                "poses alanguies sur un sofa",
+                "caresses sensuelles sur sa propre peau"
+            ],
+            part2: [
+                "danse de séduction accélérée",
+                "jeux avec les voiles et la dentelle",
+                "cambrures spectaculaires",
+                "tournoiements gracieux",
+                "poses de tentatrice"
+            ]
+        }
     },
-    hairFluo: ["argent", "blanc", "noir", "violet sombre"],
-    background: "autel mexicain la nuit, bougies allumées, fleurs de cempasúchil (souci), crânes en sucre, ambiance mystique et sacrée, lueurs chaudes des bougies",
-    danceMoves: {
-        part1: [
-            "mouvements lents et solennels",
-            "bras levés en prière",
-            "gestes de bénédiction",
-            "marche majestueuse",
-            "regards mystérieux derrière le voile"
-        ],
-        part2: [
-            "danse rituelle accélérée",
-            "tours gracieux avec la cape",
-            "jeux avec les roses",
-            "cambrures de sainte",
-            "final en pose de bénédiction, bras écartés"
-        ]
-    }
-},
 
-// ==================== COURTISANE ====================
-courtisane: {
-    type: "default",
-    name: "👑 Courtisane",
-    dance: "Danse de Séduction",
-    palmColors: { left: "#8b4513", right: "#d4af37" },
-    finalOutfit: {
-        description: "tenue de courtisane luxueuse et sensuelle",
-        colors: ["velours pourpre", "or", "ivoire"],
-        elements: [
-            "robe longue en velours pourpre profond",
-            "corset en soie ivoire avec lacets dorés",
-            "jupons en dentelle fine",
-            "manches longues transparentes",
-            "décolleté vertigineux",
-            "fente latérale jusqu'à mi-cuisse"
-        ],
-        accessories: [
-            "éventail en dentelle dorée",
-            "collier de perles fines",
-            "pendentif en or avec rubis",
-            "gants longs en résille",
-            "broche antique dans les cheveux",
-            "parfum de luxe (accessoire invisible)",
-            "chaussures à talons en satin"
-        ]
+    // ==================== RAPPEUR URBAIN (5 TENUES) ====================
+    rapper: {
+        type: "default",
+        name: "🎤 Rappeur Urbain",
+        dance: "Chorégraphie Rap / RnB",
+        palmColors: { left: "#ffd700", right: "#c0c0c0" },
+        
+        // 5 tenues urbaines différentes
+        tenues: {
+            tenue1: {
+                description: "tenue de rappeur(se) urbaine - style jogging",
+                colors: ["noir", "or", "argent"],
+                elements: [
+                    "survêtement oversized noir avec bandes dorées",
+                    "débardeur blanc moulant en dessous",
+                    "baskets blanches immaculées",
+                    "gourmette dorée autour du cou",
+                    "ceinture large à grosse boucle argentée"
+                ],
+                accessories: [
+                    "casquette de rappeur inclinée",
+                    "chaînes en or superposées",
+                    "bagues aux doigts",
+                    "micro sans fil à la main",
+                    "lunettes de soleil stylées"
+                ]
+            },
+            tenue2: {
+                description: "tenue de rappeur(se) urbaine - style hoodie",
+                colors: ["gris chiné", "noir", "blanc"],
+                elements: [
+                    "hoodie oversized gris avec capuche",
+                    "pantalon cargo noir ample",
+                    "baskets Nike Air Force 1 blanches",
+                    "banane autour de la taille",
+                    "béret incliné"
+                ],
+                accessories: [
+                    "chaîne argentée avec pendentif",
+                    "bagues en argent",
+                    "gros écouteurs autour du cou",
+                    "lunettes de vue stylées",
+                    "sacoche en bandoulière"
+                ]
+            },
+            tenue3: {
+                description: "tenue de rappeur(se) urbaine - style streetwear",
+                colors: ["beige", "marron", "blanc cassé"],
+                elements: [
+                    "veste de survêtement beige",
+                    "pantalon large assorti",
+                    "baskets New Balance 550",
+                    "tie-dye en dessous",
+                    "casquette trucker"
+                ],
+                accessories: [
+                    "colliers superposés",
+                    "montre digitale",
+                    "petite chaîne de ceinture",
+                    "tattoos sur les mains",
+                    "sac à dos streetwear"
+                ]
+            },
+            tenue4: {
+                description: "tenue de rappeur(se) urbaine - style denim",
+                colors: ["bleu denim", "blanc", "noir"],
+                elements: [
+                    "veste en jean oversize",
+                    "jeans baggy déchirés",
+                    "baskets Air Jordan 1",
+                    "t-shirt blanc basique",
+                    "ceinture à grosse boucle"
+                ],
+                accessories: [
+                    "bandana dans la poche",
+                    "lunettes de soleil rondes",
+                    "chaîne en argent épaisse",
+                    "bracelets en cuir",
+                    "bonnet noir"
+                ]
+            },
+            tenue5: {
+                description: "tenue de rappeur(se) urbaine - style sportswear",
+                colors: ["rouge", "blanc", "bleu marine"],
+                elements: [
+                    "ensemble survêtement vintage rouge",
+                    "baskets Adidas Superstar",
+                    "t-shirt blanc logo",
+                    "casquette de baseball rouge",
+                    "sac de sport en bandoulière"
+                ],
+                accessories: [
+                    "montre de sport",
+                    "bracelets en silicone",
+                    "petite chaîne dorée",
+                    "écouteurs sans fil",
+                    "gourde personnalisée"
+                ]
+            }
+        },
+        
+        // Pour compatibilité
+        finalOutfit: "tenue de rappeur(se) urbaine (choisir parmi 5 styles)",
+        
+        hairFluo: ["blond", "brun", "noir", "rouge", "bleu"],
+        background: "rue urbaine la nuit, graffitis, lampadaires, ambiance hip-hop, scène de concert intimiste",
+        danceMoves: {
+            part1: [
+                "bounce léger du corps - flexion/extension des genoux en rythme",
+                "isolations des épaules (shoulder bounce) alternées",
+                "chest pops - projection rapide de la poitrine",
+                "body rolls - vagues corporelles de la poitrine aux hanches",
+                "extensions des bras vers l'avant avec retours rapides",
+                "mouvements croisés des bras devant le torse",
+                "descentes fluides des mains le long du corps"
+            ],
+            part2: [
+                "mouvements accélérés des bras avec passages proches du visage",
+                "jeux de doigts stylisés et changements rapides",
+                "hits - arrêts nets sur les temps forts",
+                "déhanchements latéraux avec accents rythmiques",
+                "pas courts et dynamiques - déplacements latéraux",
+                "petits rebonds contrôlés sur place",
+                "appuis alternés avec variations de rythme"
+            ]
+        }
     },
-    hairFluo: ["brun", "auburn", "noir", "blond vénitien"],
-    background: "boudoir luxueux du 18ème siècle, tentures de velours, bougies parfumées, miroirs dorés, mobilier ancien, ambiance intime et raffinée",
-    danceMoves: {
-        part1: [
-            "démarche féline et langoureuse",
-            "jeux avec l'éventail (ouvertures lentes)",
-            "regards par-dessus l'épaule",
-            "poses alanguies sur un sofa",
-            "caresses sensuelles sur sa propre peau"
-        ],
-        part2: [
-            "danse de séduction accélérée",
-            "jeux avec les voiles et la dentelle",
-            "cambrures spectaculaires",
-            "tournoiements gracieux",
-            "poses de tentatrice"
-        ]
-    }
-},
 
+    // ==================== RAPPEUR AMÉRICAIN LUXE (5 TENUES) ====================
+    rapperluxe: {
+        type: "default",
+        name: "🇺🇸 Rappeur Américain",
+        dance: "Chorégraphie Rap US",
+        palmColors: { left: "#00ff00", right: "#ff0000" },
+        
+        // 5 tenues luxueuses différentes
+        tenues: {
+            tenue1: {
+                description: "tenue de rappeur(se) américaine - style Miami bling",
+                colors: ["vert émeraude", "or", "rouge"],
+                elements: [
+                    "manteau en fourrure verte oversized",
+                    "ensemble en soie rouge avec motifs GG",
+                    "baskets blanches personnalisées avec diamants",
+                    "ceinture à boucle double G en or massif",
+                    "lunettes de soleil teintées vertes",
+                    "jeans baggy avec chaînes en or"
+                ],
+                accessories: [
+                    "chaîne en or massif avec pendentif panthère en diamants",
+                    "montre Richard Mille sertie de diamants",
+                    "bagues aux 10 doigts avec pierres précieuses",
+                    "dents en or (grillz)",
+                    "bouteille de champagne en main",
+                    "liasses de billets de 100$"
+                ]
+            },
+            tenue2: {
+                description: "tenue de rappeur(se) américaine - style Hollywood",
+                colors: ["argent", "blanc", "bleu glacier"],
+                elements: [
+                    "veste en cuir argenté métallique",
+                    "t-shirt blanc Versace",
+                    "pantalon en cuir blanc",
+                    "baskets Louis Vuitton blanches",
+                    "lunettes de soleil futuristes",
+                    "ceinture LV argentée"
+                ],
+                accessories: [
+                    "chaîne en platine avec pendentif en diamants",
+                    "montre Audemars Piguet en or blanc",
+                    "bagues en diamants",
+                    "écharpe en soie blanche",
+                    "verre de Dom Pérignon",
+                    "téléphone en or"
+                ]
+            },
+            tenue3: {
+                description: "tenue de rappeur(se) américaine - style New York",
+                colors: ["noir", "or", "diamant"],
+                elements: [
+                    "manteau long en cuir noir",
+                    "hoodie Balenciaga noir",
+                    "jeans noirs slim",
+                    "bottes de motard en cuir",
+                    "lunettes de soleil noires",
+                    "ceinture à chaîne en or"
+                ],
+                accessories: [
+                    "chaîne cubaine en or massif",
+                    "montre Patek Philippe en or",
+                    "bagues en diamants noirs",
+                    "gants en cuir noir",
+                    "cigare cubain",
+                    "whisky Macallan"
+                ]
+            },
+            tenue4: {
+                description: "tenue de rappeur(se) américaine - style Atlanta",
+                colors: ["violet", "or", "blanc"],
+                elements: [
+                    "costume violet Versace",
+                    "chemise blanche en soie",
+                    "chaussures en python violet",
+                    "lunettes de soleil violettes",
+                    "ceinture en crocodile",
+                    "chapeau fedora violet"
+                ],
+                accessories: [
+                    "chaîne en or avec pendentif en diamants violets",
+                    "montre Jacob & Co sertie de diamants",
+                    "bagues en or et diamants",
+                    "canne décorative en or",
+                    "verre de Cristal Rosé",
+                    "éventail en plumes"
+                ]
+            },
+            tenue5: {
+                description: "tenue de rappeur(se) américaine - style Las Vegas",
+                colors: ["rouge", "or", "diamant"],
+                elements: [
+                    "veste en velours rouge",
+                    "chemise en soie dorée",
+                    "pantalon en velours rouge",
+                    "baskets rouges personnalisées",
+                    "lunettes de soleil rouges",
+                    "ceinture en or massif"
+                ],
+                accessories: [
+                    "chaîne en or avec pendentif carte de crédit en diamants",
+                    "montre Hublot en or rouge",
+                    "bagues en diamants rouges",
+                    "jetons de casino en or",
+                    "bouteille de Ace of Spades",
+                    "dés en diamant"
+                ]
+            }
+        },
+        
+        // Pour compatibilité
+        finalOutfit: "tenue de rappeur(se) américaine luxueuse (choisir parmi 5 styles)",
+        
+        hairFluo: ["blond platine", "rouge", "bleu", "argent", "violet"],
+        background: "soirée privée luxueuse à Miami, piscine à débordement, voitures de sport (Lamborghini), jets privés, billets de dollars qui tombent du ciel, ambiance riche et célébrité",
+        danceMoves: {
+            part1: [
+                "démarche swag arrogante",
+                "jeux avec les liasses de billets",
+                "poses de célébrité",
+                "regards méprisants et charmeurs"
+            ],
+            part2: [
+                "danse du million de dollars",
+                "jeux avec les chaînes en or",
+                "mouvements de show-off",
+                "poses de vainqueur"
+            ]
+        }
+    }, // ← VIRGULE AJOUTÉE ICI !
 
-
-// ==================== RAPPEUR / RAPPEUSE ====================
-rapper: {
-    type: "default",
-    name: "🎤 Rappeur(se)",
-    dance: "Chorégraphie Rap / RnB",
-    palmColors: { left: "#ffd700", right: "#c0c0c0" },
-    finalOutfit: {
-        description: "tenue de rappeur(se) urbaine et tendance",
-        colors: ["noir", "or", "argent"],
-        elements: [
-            "survêtement oversized noir avec bandes dorées",
-            "débardeur blanc moulant en dessous",
-            "baskets blanches immaculées",
-            "gourmette dorée autour du cou",
-            "ceinture large à grosse boucle argentée"
-        ],
-        accessories: [
-            "casquette de rappeur inclinée",
-            "chaînes en or superposées",
-            "bagues aux doigts",
-            "micro sans fil à la main",
-            "lunettes de soleil stylées"
-        ]
+    cleopatre: {
+        type: "default",
+        name: "👑 Cléopâtre",
+        dance: "Danse du Nil",
+        palmColors: { left: "#ffd700", right: "#0000ff" },
+        finalOutfit: {
+            description: "tenue de reine égyptienne Cléopâtre ultra-sexy et majestueuse",
+            colors: ["or royal", "bleu nuit", "noir profond"],
+            elements: [
+                "corset en or orné de motifs égyptiens et de pierres précieuses",
+                "jupe longue fendue jusqu'en haut de la cuisse en lin fin",
+                "cape transparente brodée de fils d'or",
+                "collier large (pectoral) en or avec lapis-lazuli",
+                "brasards en or aux poignets et biceps",
+                "sandales dorées à talons avec lanières"
+            ],
+            accessories: [
+                "couronne de Cléopâtre (coiffe de pharaon) avec uræus (cobra)",
+                "maquillage des yeux charbonneux très prononcé (khôl)",
+                "bijoux en or massif et pierres précieuses (émeraudes, lapis-lazuli)",
+                "bandeaux dans les cheveux avec perles d'or",
+                "sceptre royal (ankh ou sceptre de pharaon)",
+                "éventail en plumes d'autruche"
+            ]
+        },
+        hairFluo: ["or", "bleu électrique", "noir de jais"],
+        background: "dans le palais royal de Cléopâtre à Alexandrie, colonnes égyptiennes géantes, hiéroglyphes lumineux sur les murs, vue sur le Nil au coucher du soleil, trône en or massif, encens qui brûle, ambiance mystique et royale",
+        danceMoves: {
+            part1: [
+                "pas lents et majestueux, démarche de reine",
+                "ondulations de bras serpentines évoquant les cobras",
+                "rotations de hanches lentes et sensuelles",
+                "jeux avec les voiles transparents",
+                "poses de statue égyptienne, mains en angles"
+            ],
+            part2: [
+                "mouvements encore plus royaux et dominateurs",
+                "cambrures de reine, tête haute, regard perçant",
+                "jeux avec les bijoux et le collier pectoral",
+                "danse avec le sceptre royal de façon sensuelle",
+                "poses de déesse égyptienne, bras ouverts en offrande"
+            ]
+        }
     },
-    hairFluo: ["blond", "brun", "noir", "rouge", "bleu"],
-    background: "rue urbaine la nuit, graffitis, lampadaires, ambiance hip-hop, scène de concert intimiste",
-    danceMoves: {
-        part1: [
-            "bounce léger du corps - flexion/extension des genoux en rythme",
-            "isolations des épaules (shoulder bounce) alternées",
-            "chest pops - projection rapide de la poitrine",
-            "body rolls - vagues corporelles de la poitrine aux hanches",
-            "extensions des bras vers l'avant avec retours rapides",
-            "mouvements croisés des bras devant le torse",
-            "descentes fluides des mains le long du corps"
-        ],
-        part2: [
-            "mouvements accélérés des bras avec passages proches du visage",
-            "jeux de doigts stylisés et changements rapides",
-            "hits - arrêts nets sur les temps forts",
-            "déhanchements latéraux avec accents rythmiques",
-            "pas courts et dynamiques - déplacements latéraux",
-            "petits rebonds contrôlés sur place",
-            "appuis alternés avec variations de rythme"
-        ]
-    }
-},
 
-cleopatre: {
-    type: "default",
-    name: "👑 Cléopâtre",
-    dance: "Danse du Nil",
-    palmColors: { left: "#ffd700", right: "#0000ff" },
-    finalOutfit: {
-        description: "tenue de reine égyptienne Cléopâtre ultra-sexy et majestueuse",
-        colors: ["or royal", "bleu nuit", "noir profond"],
-        elements: [
-            "corset en or orné de motifs égyptiens et de pierres précieuses",
-            "jupe longue fendue jusqu'en haut de la cuisse en lin fin",
-            "cape transparente brodée de fils d'or",
-            "collier large (pectoral) en or avec lapis-lazuli",
-            "brasards en or aux poignets et biceps",
-            "sandales dorées à talons avec lanières"
-        ],
-        accessories: [
-            "couronne de Cléopâtre (coiffe de pharaon) avec uræus (cobra)",
-            "maquillage des yeux charbonneux très prononcé (khôl)",
-            "bijoux en or massif et pierres précieuses (émeraudes, lapis-lazuli)",
-            "bandeaux dans les cheveux avec perles d'or",
-            "sceptre royal (ankh ou sceptre de pharaon)",
-            "éventail en plumes d'autruche"
-        ]
-    },
-    hairFluo: ["or", "bleu électrique", "noir de jais"],
-    background: "dans le palais royal de Cléopâtre à Alexandrie, colonnes égyptiennes géantes, hiéroglyphes lumineux sur les murs, vue sur le Nil au coucher du soleil, trône en or massif, encens qui brûle, ambiance mystique et royale",
-    danceMoves: {
-        part1: [
-            "pas lents et majestueux, démarche de reine",
-            "ondulations de bras serpentines évoquant les cobras",
-            "rotations de hanches lentes et sensuelles",
-            "jeux avec les voiles transparents",
-            "poses de statue égyptienne, mains en angles"
-        ],
-        part2: [
-            "mouvements encore plus royaux et dominateurs",
-            "cambrures de reine, tête haute, regard perçant",
-            "jeux avec les bijoux et le collier pectoral",
-            "danse avec le sceptre royal de façon sensuelle",
-            "poses de déesse égyptienne, bras ouverts en offrande"
-        ]
-    }
-},
-
-
-       circus: {
+    circus: {
         type: "circus",
         name: "🎪 Acrobate",
         dance: "Danse du Cirque",
@@ -1645,8 +1841,8 @@ cleopatre: {
             part1: ["mouvements acrobatiques", "poses de trapéziste"],
             part2: ["danse aérienne", "jeux avec le cerceau"]
         }
-    }  // ← PAS DE VIRGULE ICI !
-};  // ← FERMETURE DE L'OBJET countries
+    }
+};
 
 // Vérification du nombre de personnages
 console.log(`✅ countries.js chargé avec ${Object.keys(countries).length} personnages`);
