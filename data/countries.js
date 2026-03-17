@@ -1582,6 +1582,52 @@ rapper: {
     }
 },
 
+cleopatre: {
+    type: "default",
+    name: "👑 Cléopâtre",
+    dance: "Danse du Nil",
+    palmColors: { left: "#ffd700", right: "#0000ff" },
+    finalOutfit: {
+        description: "tenue de reine égyptienne Cléopâtre ultra-sexy et majestueuse",
+        colors: ["or royal", "bleu nuit", "noir profond"],
+        elements: [
+            "corset en or orné de motifs égyptiens et de pierres précieuses",
+            "jupe longue fendue jusqu'en haut de la cuisse en lin fin",
+            "cape transparente brodée de fils d'or",
+            "collier large (pectoral) en or avec lapis-lazuli",
+            "brasards en or aux poignets et biceps",
+            "sandales dorées à talons avec lanières"
+        ],
+        accessories: [
+            "couronne de Cléopâtre (coiffe de pharaon) avec uræus (cobra)",
+            "maquillage des yeux charbonneux très prononcé (khôl)",
+            "bijoux en or massif et pierres précieuses (émeraudes, lapis-lazuli)",
+            "bandeaux dans les cheveux avec perles d'or",
+            "sceptre royal (ankh ou sceptre de pharaon)",
+            "éventail en plumes d'autruche"
+        ]
+    },
+    hairFluo: ["or", "bleu électrique", "noir de jais"],
+    background: "dans le palais royal de Cléopâtre à Alexandrie, colonnes égyptiennes géantes, hiéroglyphes lumineux sur les murs, vue sur le Nil au coucher du soleil, trône en or massif, encens qui brûle, ambiance mystique et royale",
+    danceMoves: {
+        part1: [
+            "pas lents et majestueux, démarche de reine",
+            "ondulations de bras serpentines évoquant les cobras",
+            "rotations de hanches lentes et sensuelles",
+            "jeux avec les voiles transparents",
+            "poses de statue égyptienne, mains en angles"
+        ],
+        part2: [
+            "mouvements encore plus royaux et dominateurs",
+            "cambrures de reine, tête haute, regard perçant",
+            "jeux avec les bijoux et le collier pectoral",
+            "danse avec le sceptre royal de façon sensuelle",
+            "poses de déesse égyptienne, bras ouverts en offrande"
+        ]
+    }
+},
+
+
        circus: {
         type: "circus",
         name: "🎪 Acrobate",
